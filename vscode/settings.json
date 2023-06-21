@@ -1,0 +1,68 @@
+{
+    // Workbench
+    "workbench.colorTheme": "KanagawaTheme",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.startupEditor": "none",
+    // Files
+    "files.exclude": {
+      "**/.classpath": true,
+      "**/.project": true,
+      "**/.settings": true,
+      "**/.factorypath": true
+    },
+    "files.encoding": "utf8",
+    // Explorer
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+    "explorer.compactFolders": false,
+    // Editor
+    "editor.fontFamily": "JetBrainsMono Nerd Font",
+    "editor.fontLigatures": true,
+    "editor.suggestSelection": "first",
+    "editor.minimap.renderCharacters": false,
+    "editor.cursorBlinking": "solid",
+    "editor.cursorStyle": "block",
+    "editor.formatOnSave": false,
+    // Security
+    "security.workspace.trust.untrustedFiles": "open",
+    "security.allowedUNCHosts": [],
+    // Integrated Terminal Configs
+    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "terminal.integrated.fontFamily": "ComicShannsMono Nerd Font Mono",
+    "terminal.integrated.fontSize": 16,
+    // Languages Configs
+    // TypeScript
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "[typescript, javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    // JavaScript
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "debug.internalConsoleOptions": "openOnSessionStart",
+      // Dart
+    "[dart]": {
+      "editor.formatOnSave": true,
+      "editor.formatOnType": true,
+      "editor.selectionHighlight": false,
+      "editor.suggest.snippetsPreventQuickSuggestions": false,
+      "editor.suggestSelection": "first",
+      "editor.tabCompletion": "onlySnippets",
+      "editor.wordBasedSuggestions": false,
+      "editor.tabSize": 4,
+      "editor.insertSpaces": true,
+      "editor.detectIndentation": false,
+      "editor.suggest.insertMode": "replace",
+      "editor.inlayHints.enabled": "offUnlessPressed"
+    },
+      // JSON
+    "[json]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+      // HTML
+    "[html]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
+  }
