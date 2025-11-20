@@ -1,0 +1,70 @@
+{
+	"layer": "top",
+	"modules-left": ["niri/workspaces", "mpd", "sway/mode"],
+	"modules-center": ["clock"],
+	"modules-right": ["disk", "network", "pulseaudio", "memory", "cpu", "temperature", "battery"],
+	"mpd": {
+		"tooltip": false,
+		"format": "{stateIcon} {artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S})",
+		"format-disconnected": "ﳌ",
+		"format-stopped": "",
+		"state-icons": {
+			"playing": "",
+			"paused": ""
+		}
+	},
+	"pulseaudio": {
+		"tooltip": false,
+		"scroll-step": 5,
+		"format": "{icon} {volume}%",
+		"format-icons": {
+			"default": ["奄", "奔", "墳"]
+		}
+	},
+	"network": {
+		"tooltip": false,
+		"format-wifi": "  {essid} {ipaddr}",
+		"format-ethernet": "󰈀  {ipaddr}"
+	},
+	"cpu": {
+		"tooltip": false,
+		"format": "{}%  "
+	},
+	"memory": {
+		"tooltip": false,
+		"format": "RAM {used}/{total}G"
+	},
+	"clock": {
+		"interval": 1,
+		"format": "{:%H:%M:%S}  ",
+		"format-alt": "{:%A, %B %d, %Y (%R)} 󰸗 ",
+		"tooltip-format": "<tt><small>{calendar}</small></tt>",
+		"calendar": {
+			"mode"          : "year",
+			"mode-mon-col"  : 3,
+			"weeks-pos"     : "right",
+			"on-scroll"     : 1,
+			"format": {
+				"months":     "<span color='#ffead3'><b>{}</b></span>",
+				"days":       "<span color='#ecc6d9'><b>{}</b></span>",
+				"weeks":      "<span color='#99ffdd'><b>W{}</b></span>",
+				"weekdays":   "<span color='#ffcc66'><b>{}</b></span>",
+				"today":      "<span color='#ff6699'><b><u>{}</u></b></span>"
+			}
+		},
+		"actions":  {
+			"on-click-right": "mode",
+			"on-scroll-up": "tz_up",
+			"on-scroll-down": "tz_down",
+			"on-scroll-up": "shift_up",
+			"on-scroll-down": "shift_down"
+		}
+	},
+	"battery": {
+		"format": "{icon} {capacity}%",
+		"format-icons": ["󱊡", "󱊢", "󱊣"]
+	},
+	"disk": {
+		"format": "/  {percentage_free}% FREE"
+	}
+}
