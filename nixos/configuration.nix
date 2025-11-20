@@ -24,6 +24,15 @@
   services.xserver.displayManager.setupCommands = ''
     xrandr --output DP-0 --primary --mode 3440x1440 --rate 144.00
   '';
+  services.udev.packages = [
+  (pkgs.writeTextFile {
+    name = "vial-kb-rule";
+    destination = "/lib/udev/rules.d/59-vial.rules";
+    text = ''KERNEL=="hidraw*", SUBSYSTEM=="hidraw", ATTRS{serial}=="*vial:f64c2b3c*", MODE="0660", GROUP="users", TAG+="uaccess", TAG+="udev-acl"'';
+  })
+];
+
+
 
 
   hardware.nvidia = {
