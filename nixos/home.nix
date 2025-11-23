@@ -4,10 +4,9 @@ let
 	dotfiles = "${config.home.homeDirectory}/workspace/dotfiles";
 	create_symlink = path: config.lib.file.mkOutOfStoreSymlink path;
 in
-{
+	{
 	home.username = "renas";
 	home.homeDirectory = "/home/renas";
-	programs.git.enable = true;
 	home.stateVersion = "25.05";
 	programs.bash = {
 		enable = true;
@@ -21,6 +20,11 @@ in
 		shellAliases = {
 			btw = "echo I use Nixos, btw";
 			ll = "ls -lah";
+			img = "qimgv $@";
+			nixedit = "nvim ~/workspace/dotfiles/nixos";
+			nixrebuild = "sudo nixos-rebuild switch --flake /home/renas/.config/nixos#nixos";
+
+
 		};
 		initContent = ''
 			eval "$(starship init zsh)"
@@ -36,8 +40,16 @@ in
 			shell_integration no-cursor
 		'';
 	};
-	programs.waybar.enable = true;
-
+	home.packages = with pkgs; [
+		neovim
+		ripgrep
+		nil
+		nixfmt-rfc-style
+		nodejs
+		git
+		gcc
+		waybar
+	];
 	programs.starship = {
 		enable = true;
 		settings = {
@@ -52,6 +64,10 @@ in
 
 	xdg.configFile."waybar" = {
 		source = create_symlink "${dotfiles}/waybar/";
+		recursive = true;
+	};
+	xdg.configFile."nvim" = {
+		source = create_symlink "${dotfiles}/nvim";
 		recursive = true;
 	};
 }

@@ -32,9 +32,6 @@
   })
 ];
 
-
-
-
   hardware.nvidia = {
 	  modesetting.enable = true;
 	  package = config.boot.kernelPackages.nvidiaPackages.stable;
@@ -72,9 +69,7 @@
     bogus-priv = true;
   };
 };
-
-	# Make systemd-resolved or NetworkManager use dnsmasq
-	networking.nameservers = [ "127.0.0.1" ];
+networking.nameservers = [ "127.0.0.1" ];
 
   users.users.renas = {
     isNormalUser = true;
@@ -83,8 +78,9 @@
       tree
       xwayland-satellite
       google-chrome
-      geeqie
+      qimgv
     ];
+    shell = pkgs.zsh;
   };
 
   programs.firefox.enable = true;
@@ -96,10 +92,7 @@
 		gamescopeSession.enable = true;
 	};
   programs.xwayland.enable = true;
-  programs.neovim = {
-    enable = true;
-    defaultEditor = true;
-  };
+  programs.zsh.enable = true;
 
   environment.systemPackages = with pkgs; [
     vim 
@@ -113,6 +106,8 @@
     vial
     popsicle
     pciutils
+    teamspeak_client
+    fastfetch
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
