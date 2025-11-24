@@ -35,3 +35,6 @@ vim.api.nvim_create_autocmd('LspAttach', {
 
 -- Nvim tree
 vim.keymap.set('n', '<Leader>t', '<cmd>:NvimTreeToggle<cr>')
+
+-- lsp
+vim.keymap.set('n', '<Leader>ff', '<cmd>lua vim.lsp.buf.format()<cr>')

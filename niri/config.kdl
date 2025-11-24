@@ -317,6 +317,11 @@ layout {
 spawn-at-startup "waybar"
 spawn-at-startup "/home/renas/workspace/dotfiles/swaybg/set.sh"
 
+spawn-at-startup "xwayland-satellite :1"
+environment {
+    DISPLAY ":0"
+}
+
 // To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
 // spawn-sh-at-startup "qs -c ~/source/qs/MyAwesomeShell"
 
