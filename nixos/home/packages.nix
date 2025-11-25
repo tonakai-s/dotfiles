@@ -11,4 +11,5 @@
     gcc
     waybar
   ];
+
 }
