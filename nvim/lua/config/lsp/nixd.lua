@@ -1,5 +1,6 @@
-vim.lsp.enable('nixd')
+local capabilities = require("config.lsp.default")
 
+vim.lsp.enable('nixd')
 vim.lsp.config['nixd'] = {
     cmd = { 'nixd' },
     filetypes = { 'nix' },
@@ -7,4 +8,5 @@ vim.lsp.config['nixd'] = {
     formatting = {
         command = { "nixpkgs-fmt" },
     },
+    capabilities = capabilities,
 }
