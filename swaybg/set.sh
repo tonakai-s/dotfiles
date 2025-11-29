@@ -1,1 +1,1 @@
-swaybg -i /home/renas/walls/ultraw/reze-pool.png -m fill
+swaybg -i /home/renas/walls/ultraw/chainsaw-open-mouth.jpg -m fill

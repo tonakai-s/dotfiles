@@ -17,5 +17,6 @@
     fastfetch
     nixd
     discord
+    lua-language-server
   ];
 }
