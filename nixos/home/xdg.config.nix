@@ -13,4 +13,8 @@ in
     source = create_symlink "${dotfiles}/nvim";
     recursive = true;
   };
+  xdg.configFile."../tmux.conf" = {
+    source = create_symlink "${dotfiles}/tmux.conf";
+    recursive = true;
+  };
 }

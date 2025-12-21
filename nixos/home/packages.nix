@@ -9,6 +9,7 @@
     nodejs
     git
     gcc
+    tmux
     waybar
   ];
 

@@ -9,6 +9,7 @@
       google-chrome
       qimgv
       xwayland-satellite
+      protontricks
     ];
     shell = pkgs.zsh;
   };

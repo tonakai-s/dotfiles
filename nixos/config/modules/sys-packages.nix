@@ -18,5 +18,7 @@
     nixd
     discord
     lua-language-server
+    unrar
+    unzip
   ];
 }
