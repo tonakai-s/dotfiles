@@ -1,1 +1,1 @@
-swaybg -i /home/renas/walls/ultraw/frieren-tree.png -m fill
+swaybg -i /home/renas/walls/ultraw/purple-flower.jpg -m fill

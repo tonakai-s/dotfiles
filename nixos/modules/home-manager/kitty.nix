@@ -8,6 +8,7 @@
       			confirm_os_window_close -1
       			cursor_shape block
       			shell_integration no-cursor
+                font_family IosevkaTermSlab Nerd Font Mono
       		'';
   };
 }

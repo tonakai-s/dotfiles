@@ -5,7 +5,7 @@
 
 gestures {
 	hot-corners {
-		off
+	    off
 	}
 }
 
@@ -51,24 +51,24 @@ input {
     // Omitting settings disables them, or leaves them at their default values.
     // All commented-out settings here are examples, not defaults.
     touchpad {
-        off
-        // tap
+        // off
+        tap
         // dwt
         // dwtp
         // drag false
         // drag-lock
-        // natural-scroll
+        natural-scroll
         // accel-speed 0.2
         // accel-profile "flat"
-        // scroll-method "two-finger"
-        // disabled-on-external-mouse
+        scroll-method "two-finger"
+        disabled-on-external-mouse
     }
 
     mouse {
         // off
         // natural-scroll
         // accel-speed 0.2
-	accel-profile "flat"
+	    accel-profile "flat"
         // scroll-method "no-scroll"
     }
 
@@ -84,7 +84,7 @@ input {
     }
 
     // Uncomment this to make the mouse warp to the center of newly focused windows.
-    // warp-mouse-to-focus
+    warp-mouse-to-focus
 
     // Focus windows and outputs automatically when moving the mouse into them.
     // Setting max-scroll-amount="0%" makes it work only on windows already fully on screen.
@@ -153,7 +153,7 @@ output "HDMI-A-1" {
 // https://yalter.github.io/niri/Configuration:-Layout
 layout {
     // Set gaps around windows in logical pixels.
-    gaps 13
+    gaps 10
 
     // When to center a column when changing focus, options are:
     // - "never", default behavior, focusing an off-screen column will keep at the left
@@ -200,7 +200,7 @@ layout {
     // You can change how the focus ring looks.
     focus-ring {
         // Uncomment this line to disable the focus ring.
-        off
+        //off
 
         // How many logical pixels the ring extends out from the windows.
         width 2
@@ -211,14 +211,13 @@ layout {
         // - CSS-like notation: "rgb(255, 127, 0)", rgba(), hsl() and a few others.
 
         // Color of the ring on the active monitor.
-        active-color "#46a3a3"
+        active-color "#f0f4f5"
 
         // Color of the ring on inactive monitors.
         //
         // The focus ring only draws around the active window, so the only place
         // where you can see its inactive-color is on other monitors.
-        inactive-color "#505050"
-
+        inactive-color "#b6b7b8"
         // You can also use gradients. They take precedence over solid colors.
         // Gradients are rendered the same as CSS linear-gradient(angle, from, to).
         // The angle is the same as in linear-gradient, and is optional,
@@ -239,8 +238,8 @@ layout {
     border {
         // The settings are the same as for the focus ring.
         // If you enable the border, you probably want to disable the focus ring.
+        // off
         off
-
         width 2
         active-color "#ffc87f"
         inactive-color "#505050"
@@ -281,18 +280,16 @@ layout {
         // pixels and match the CSS box-shadow properties.
 
         // Softness controls the shadow blur radius.
-        softness 40
+        softness 20
 
         // Spread expands the shadow.
-        spread 5
+        spread 10
 
         // Offset moves the shadow relative to the window.
-        offset x=0 y=5
+        offset x=0 y=0
 
         // You can also change the shadow color and opacity.
-        // color "#1b1c1c80"
-
-
+        color "#140c1799"
     }
 
     // Struts shrink the area occupied by windows, similarly to layer-shell panels.
