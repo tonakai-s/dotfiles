@@ -1,17 +1,19 @@
 {
 	"layer": "top",
-	"modules-left": ["niri/workspaces", "mpd", "sway/mode"],
+	"modules-left": ["niri/workspaces", "mpris", "sway/mode"],
 	"modules-center": ["clock"],
 	"modules-right": ["disk", "network", "pulseaudio", "memory", "cpu", "temperature", "battery"],
-	"mpd": {
-		"tooltip": false,
-		"format": "{stateIcon} {artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S})",
-		"format-disconnected": "ﳌ",
-		"format-stopped": "",
-		"state-icons": {
-			"playing": "",
-			"paused": ""
-		}
+	"mpris": {
+        "players": ["firefox"],
+		"format": "{player_icon} {status_icon} {artist} - {album} - {title}",
+        "max-length": 50,
+		"status-icons": {
+			"playing": "",
+			"paused": ""
+		},
+        "player-icons": {
+            "firefox": ""
+        }
 	},
 	"pulseaudio": {
 		"tooltip": false,
@@ -23,8 +25,8 @@
 	},
 	"network": {
 		"tooltip": false,
-		"format-wifi": "  {essid} {ipaddr}",
-		"format-ethernet": "󰈀  {ipaddr}"
+		"format-wifi": " {essid} {ipaddr}",
+		"format-ethernet": "󰈀 {ipaddr}"
 	},
 	"cpu": {
 		"tooltip": false,

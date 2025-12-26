@@ -9,6 +9,7 @@
             qimgv
             nixd
             lua-language-server
+            playerctl
         ];
         shell = pkgs.zsh;
     };
