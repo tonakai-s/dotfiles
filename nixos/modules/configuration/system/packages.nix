@@ -19,5 +19,6 @@
         obsidian
         nautilus
         htop
+        nixd
     ];
 }

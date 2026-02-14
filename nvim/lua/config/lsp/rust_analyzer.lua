@@ -5,9 +5,19 @@ vim.lsp.config('rust_analyzer', {
 	settings = {
 		['rust-analyzer'] = {
 			diagnostics = {
-				enable = false;
+				enable = true;
 			},
 			capabilities = capabilities,
+            procmacro = {
+                ignored = {
+                    leptos_macro = {
+                        "server",
+                    }
+                }
+            },
+            cargo = {
+                features = "all",
+            },
 		}
 	}
 })
