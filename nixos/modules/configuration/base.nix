@@ -2,6 +2,7 @@
 
 {
     imports = [
+        ./xdg.nix
         ./boot.nix
         ./fonts.nix
         ./renas.nix
@@ -9,6 +10,7 @@
         ./programs/firefox.nix
         ./programs/niri.nix
         ./programs/zsh.nix
+        ./programs/docker.nix
 
         ./services/dnsmasq.nix
         ./services/ly.nix

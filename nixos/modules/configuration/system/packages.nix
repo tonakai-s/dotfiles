@@ -16,5 +16,8 @@
         fastfetch
         unrar
         unzip
+        obsidian
+        nautilus
+        htop
     ];
 }
