@@ -9,6 +9,7 @@
       			cursor_shape block
       			shell_integration no-cursor
                 font_family IosevkaTermSlab Nerd Font Mono
+                font_size 16
       		'';
   };
 }
