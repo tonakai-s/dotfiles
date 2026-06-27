@@ -1,4 +1,5 @@
 {
+  pkgs,
   ...
 }:
 
@@ -15,7 +16,10 @@
 
   time.timeZone = "America/Sao_Paulo";
 
-  networking.nameservers = [ "127.0.0.1" ];
+  networking.nameservers = [
+    "127.0.0.1"
+    "192.168.56.10"
+  ];
 
   nix.settings.experimental-features = [
     "nix-command"
@@ -23,4 +27,6 @@
   ];
 
   system.stateVersion = "25.05";
+
+  boot.kernelPackages = pkgs.linuxPackages_latest;
 }

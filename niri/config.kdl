@@ -153,7 +153,7 @@ output "HDMI-A-1" {
 // https://yalter.github.io/niri/Configuration:-Layout
 layout {
     // Set gaps around windows in logical pixels.
-    gaps 10
+    gaps 20
 
     // When to center a column when changing focus, options are:
     // - "never", default behavior, focusing an off-screen column will keep at the left
@@ -311,8 +311,9 @@ layout {
 // See the binds section below for more spawn examples.
 
 // This line starts waybar, a commonly used bar for Wayland compositors.
-spawn-at-startup "waybar"
-spawn-at-startup "/home/renas/workspace/dotfiles/swaybg/set.sh"
+// spawn-at-startup "waybar"
+// spawn-at-startup "/home/renas/workspace/dotfiles/swaybg/set.sh"
+spawn-at-startup "noctalia"
 
 spawn-at-startup "xwayland-satellite :1"
 environment {

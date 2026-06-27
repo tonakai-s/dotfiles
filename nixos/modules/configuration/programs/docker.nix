@@ -1,8 +1,8 @@
 { ... }:
 
 {
-    virtualisation.docker = {
-        enable = true;
-    };
-    users.users.renas.extraGroups = [ "docker" ];
+  virtualisation.docker = {
+    enable = true;
+  };
+  users.users.renas.extraGroups = [ "docker" ];
 }
