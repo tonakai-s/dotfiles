@@ -7,7 +7,7 @@
     ./zsh.nix
     ./kitty.nix
     ./bash.nix
-    ./zed.nix
+    ./ghostty.nix
   ];
 
   home.packages = with pkgs; [

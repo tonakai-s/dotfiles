@@ -13,6 +13,7 @@
     ./programs/zsh.nix
     ./programs/docker.nix
     ./programs/obs.nix
+    ./programs/gamemode.nix
 
     ./services/dnsmasq.nix
     ./services/ly.nix

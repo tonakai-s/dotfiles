@@ -31,5 +31,7 @@
     shotcut
     man-pages
     gnumake
+    qbittorrent
+    vlc
   ];
 }
