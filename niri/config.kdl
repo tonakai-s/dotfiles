@@ -29,6 +29,7 @@ overview {
 // https://yalter.github.io/niri/Configuration:-Input
 
 input {
+
     keyboard {
         xkb {
             // You can set rules, model, layout, variant and options.
@@ -375,6 +376,11 @@ window-rule {
     // - Flatpak Firefox (app-id is "org.mozilla.firefox")
     match app-id=r#"firefox$"# title="^Picture-in-Picture$"
     open-floating true
+}
+
+window-rule {
+    match app-id=r#"^steam$"#
+    open-on-output "DP-1"
 }
 
 // Example: block out two password managers from screen capture.

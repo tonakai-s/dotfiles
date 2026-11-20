@@ -12,8 +12,8 @@
     ./programs/niri.nix
     ./programs/zsh.nix
     ./programs/docker.nix
-    ./programs/obs.nix
     ./programs/gamemode.nix
+    ./programs/programming.nix
 
     ./services/dnsmasq.nix
     ./services/ly.nix

@@ -8,6 +8,7 @@
     ./kitty.nix
     ./bash.nix
     ./ghostty.nix
+    ./vscode.nix
   ];
 
   home.packages = with pkgs; [

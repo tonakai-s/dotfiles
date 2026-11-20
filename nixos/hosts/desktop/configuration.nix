@@ -9,6 +9,8 @@
     ../../modules/configuration/base.nix
     ../../modules/configuration/gaming.nix
     ../../modules/configuration/services/xserver/display.manager.husky.nix
+    ../../modules/configuration/services/samba.nix
+    ../../modules/configuration/programs/obs.nix
   ];
 
   networking.hostName = "desktop";

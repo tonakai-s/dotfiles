@@ -2,6 +2,7 @@
 
 {
   environment.systemPackages = with pkgs; [
+    popsicle
     vim
     git
     curl
